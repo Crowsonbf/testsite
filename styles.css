@@ -1,11 +1,38 @@
 td {
-    Color: #ff5050;
+    Color: white;
     font-family: cursive;
 font-size: 20px
 
 
 }
 Table{
- background-color: #33ccff;  
-    color: #ff5050
+ background-color: green;  
+    color: white
+}
+h2 {
+    align: center;   
+    float: none;
+    border: 1px solid black;
+    background-color: green;
+    color: white;
+    text-align: center
+    
+}
+h1 {
+    align: center;   
+    float: none;
+    border: 1px solid black;
+    background-color: green;
+    color: white;
+    text-align: center
+    
+}
+img {
+    align="middle"
+    padding-left: 500px
+    
+}
+body {
+    
+ background-color: grey   
 }
