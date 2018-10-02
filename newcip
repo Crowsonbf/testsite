@@ -4,15 +4,20 @@ public class Homophonic
     public static void main(String[]args)
     {
            Scanner s = new Scanner(System.in);
-            int i = 0;
+
 // could have used empty string, but it doesnt harm anything
-            String str ="attack";
+            String str = "attack";
             String cipher2 = "";
-            
-            System.out.println("enter a word");
+            System.out.println("enter a message");
             str = s.nextLine();
+            System.out.println("The Encrypted message is: "+encryptText(cipher2,str));
+    }
 // loop runs as many times as there are letters in the message
 
+
+public static String encryptText(String cipher2, String str){
+        cipher2 = "";
+        int i = 0;
 
         while (i < str.length()){
             char chr=str.charAt(i);
@@ -31,9 +36,8 @@ public class Homophonic
              asciiValue = asciiValue -102;
          }
         else if(asciiValue > 103){
-            asciiValue = asciiValue -102;
+            asciiValue = asciiValue -103;
          }
-         System.out.println("Encrypting");
         if (asciiValue < 10){
             String cipher = "" + "0"+asciiValue + " ";
             cipher2 = cipher2 + cipher;
@@ -44,11 +48,12 @@ public class Homophonic
             cipher2 = cipher2 + cipher;
             i++;
         }
+    
         }
+        return cipher2;
 
 
+}
 
-         System.out.println("The Encrypted message is: "+cipher2);
-         }
-
-    }
+        
+}
